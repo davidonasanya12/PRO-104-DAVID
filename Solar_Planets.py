@@ -1,0 +1,15 @@
+import cv2
+
+img=cv2.imread("SolarSystem.jpg")
+print(img)
+cv2.putText(img,"Sun",(20,250),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Mercury",(65,100),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Venus",(120,250),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Earth",(160,100),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Mars",(200,250),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Jupiter",(240,100),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Saturn",(320,250),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Uranus",(380,100),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.putText(img,"Neptune",(420,250),fontFace=cv2.FONT_HERSHEY_COMPLEX_SMALL,fontScale=0.5,color=(255,0,0))
+cv2.imshow("SolarSystem",img)
+cv2.waitKey(0)
